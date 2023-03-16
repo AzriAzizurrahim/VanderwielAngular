@@ -1,0 +1,37 @@
+.form-control {
+    border-radius: 3px;
+    width: 40vw;
+    margin-left: 0%;
+    margin-top: 15px;
+  }
+  .fancy-button {
+    background-color: white;
+    color: #1976d2;
+  }
+  
+  .material-icons {
+    color: #f3f3f3;
+    padding-right: 3px;
+  }
+  
+  .seg-bar {
+    display: flex;
+    align-items: center;
+    
+    width: auto;
+    max-width: 1280px;
+    padding: 0 4vw;
+    box-sizing: border-box;
+    height: 68px;
+  }
+  
+  .seg-bar-search {
+    position: relative;
+    min-width: 300px;
+  }
+  /*
+  Copyright Google LLC. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at https://angular.io/license
+  */
+  

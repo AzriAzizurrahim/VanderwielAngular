@@ -1,0 +1,44 @@
+<header>
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="navbar-brand seg-bar">
+        <strong class="navbar-brand" style="padding-right:6px;font-size:30px;"
+          >Hyper</strong
+        >
+        <form class="d-flex seg-bar-search" role="search">
+          <input
+            class="form-control me-1"
+            name="searchInput"
+            [(ngModel)]="searchTerm"
+            (keyup)="search($event)"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-light"
+            style="height:37px;margin-top:15px"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+        <a
+          routerLink="cart"
+          class="btn btn-dark"
+          style="padding:22px ;margin-top:5px"
+        >
+          <i class="material-icons">shopping_cart</i>
+          <div style="font-size:10px" class="badge bg-primary">
+            {{ totalItem }}
+          </div>
+        </a>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- 
+  Copyright Google LLC. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at https://angular.io/license
+  -->
+  

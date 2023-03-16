@@ -1,0 +1,53 @@
+<div class="product-bar">
+    <div class="container b-product-bar">
+      <div class="item">
+        <a (click)="filter('')">All Product</a>
+      </div>
+      <div class="item">
+        <a (click)="filter('MenShoes')">Men Shoes</a>
+      </div>
+      <div class="item">
+        <a (click)="filter('WomenShoes')">Women Shoes</a>
+      </div>
+      <div class="item">
+        <a (click)="filter('Kids')">Kids </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="">
+    <div class="row">
+      <ng-container
+        *ngFor="let item of filterCategory | filter: searchKey:'title'"
+      >
+        <div class="card col-md-3">
+          <img src="{{ item.image }}" alt="" class="imageAdjustment" />
+          <p
+            style="margin-top:50px ; white-space:nowrap; overflow:hidden; text-overflow: ellipsis; max-width:100ch"
+          >
+            <strong>RM </strong>{{ item.price }}
+          </p>
+          <h6
+            style="font-weight:bold;margin-top:7px ; white-space:nowrap; overflow:hidden; text-overflow: ellipsis; max-width:100vh"
+          >
+            {{ item.name }}
+          </h6>
+          <p
+            style="white-space:nowrap; overflow:hidden; text-overflow: ellipsis; max-width:100vh"
+          >
+            {{ item.description }}
+          </p>
+          <p>{{ item.category }}</p>
+          <button class="btn btn-primary" (click)="addtocart(item)">
+            Add to cart
+          </button>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <!-- 
+  Copyright Google LLC. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at https://angular.io/license
+  -->
+  
