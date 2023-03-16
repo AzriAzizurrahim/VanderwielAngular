@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
+Download VanderwileProject and VanderwileAngular
+Run VanderwileProject at Microsoft Visual Studio
+Run VanderwileAngular at Visual Studio Code
+
+Then run start without debugging on project at Microsoft Visual Studio. https://localhost:7229/swagger/index.html will popup.
+Click Get/api/Vandewiele.Then Click Try it out at right side and click execute.
+
+After that go to terminal on project at Visual Studio Code and run (ng serve -o)
+
+Thanks
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
